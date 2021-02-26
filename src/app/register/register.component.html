@@ -1,0 +1,30 @@
+<mat-card class="mt-5">
+  <mat-card-header>
+  <mat-card-title>Register</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+  <form #ng="ngForm" (ngSubmit)="register(ng)" >
+  <mat-form-field>
+  <input matInput type="text" required ngModel name="name" placeholder="Name">
+  <mat-error>Name is required</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+  <input matInput type="email" required ngModel name="email" placeholder="Email">
+  <mat-error>Email is required</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+  <input matInput type="password" minlength="6" required ngModel name="password" placeholder="password">
+  <mat-error>Password length should be atleast 6</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+  <input matInput type="password" minlength="6" required ngModel name="cfpassword" placeholder="Re enter your password">
+  <mat-error>Password length should be atleast 6</mat-error>
+  </mat-form-field>
+  <div>
+  <button type="submit" mat-raised-button>Submit</button>
+  &nbsp;
+  <button type="reset" mat-raised-button>Reset</button>
+  </div>
+  </form>
+  </mat-card-content>
+  </mat-card>
