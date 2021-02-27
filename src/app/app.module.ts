@@ -12,14 +12,18 @@ import { MatButtonModule } from '@angular/material/button';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
-import {AuthInterceptor} from './auth-interceptor'
+import {AuthInterceptor} from './auth-interceptor';
+import { CustomerComponent } from './customer/customer.component';
+import { AdminComponent } from './admin/admin.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    CustomerComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,123 @@
+<!--<div class="mt-2 text-center">
+  <mat-card>
+    <mat-card-header>
+    <mat-card-title>Customer Page</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+    <form #ng="ngForm" (ngSubmit)="place(ng)" >
+      <mat-form-field>
+        <select name="stock" id="sto">
+          <option value="select" >select</option>
+          <option value="DBS1" >DBS1</option>
+          <option value="DBS2" >DBS2</option>
+          <option value="DBS3" >DBS3</option>
+        </select>
+      </mat-form-field>
+      <mat-form-field>
+        <select name="type" id="ty">
+          <option value="select" >select</option>
+          <option value="limit" >LIMIT</option>
+          <option value="market" >MARKET</option>
+
+        </select>
+      </mat-form-field>
+    <mat-form-field>
+    <input matInput type="number" required ngModel name="price" placeholder="price">
+    <mat-error>Price is required</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+    <input matInput type="number"  required ngModel name="quantity" placeholder="quantity">
+    <mat-error>Quantity is required</mat-error>
+    </mat-form-field>
+
+
+    <div class="text-center">
+    <button mat-raised-button type="submit">Place Order</button>
+    </div>
+  </form>
+  </mat-card-content>
+  </mat-card>
+  </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Screen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="customer.component.css">
+</head>
+<body>
+
+  <form #ng="ngForm" (ngSubmit)="place(ng)" >
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="content">
+                <h2 style="color: aliceblue;">Search Stock</h2>
+                <select>
+                    <option value="DBS">DBS1</option>
+                    <option value="DBS">DBS2</option>
+                    <option value="DBS">DBS3</option>
+                </select>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-lg-12">
+            <div id="content">
+                <h3>Order Type</h3>
+                <select>
+                    <option value="Market">Market</option>
+                    <option value="Limit">Limit</option>
+                </select>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-lg-12">
+            <div id="content">
+                <h3>Price</h3>
+                <input type="number" min=0>
+            </div>
+        </div>
+    </div>
+    </div>
+        <div class="row">
+        <div class="col-lg-12">
+            <div id="content">
+                <h3>Quantity</h3>
+                <input type="number" min=0>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-lg-12">
+            <div id="content">
+                <button class="btn btn-default btn-lg" id="PlaceOrder" type="submit">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+
+<script type="text/javascript" src="bootstrap.js"></script>
+</body>
+</html>
